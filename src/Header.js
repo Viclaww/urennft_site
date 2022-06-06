@@ -25,7 +25,7 @@ const Header = ( { slides }) => {
                             {index === headers && (
                                          
 
-                                            <div className= 'w3-animate-right'>
+                                            <div className= 'text w3-animate-right'>
                                                 <div>
                                                 <h1>{ head.header }</h1>
                                                 <p>{ head.subHead}</p>

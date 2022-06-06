@@ -51,7 +51,7 @@ top: 0px;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
-  align-items: center;
+  align-items: center; 
 }
 
 .development h1{
@@ -75,6 +75,10 @@ top: 0px;
 }
 .development img {
   z-index: -1;
+  position: absolute;
+}
+.text {
+  width: 70%;
 }
 .Maincontent {
   width: 100vw;

@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto';
+    font-size: 0.8em;
+    color: white;
+    background-image: url('./30\ Real\ Examples\ Of\ Blockchain\ Technology\ In\ Practice\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.home{
+  position: absolute;
+width: 1440px;
+height: 939px;
+left: 0px;
+top: 0px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+}
+.navbar img{
+  top: 24px;
+}
+.navbar span{
+   font-size: 1.5em;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  text-transform: capitalize;
+
+
+}
+.links a{
+  text-decoration: none;
+}
+.development {
+  margin: 5em 5em;
+  width: 100%;
+  padding: 2.5em;
+  word-spacing: 10px;
+  transition: all 2s;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.development h1{
+  font-family: 'Roboto' sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+
+}
+.development p {
+  opacity: 0.5;
+  font-size: 1em;
+}
+.development button {
+  margin: 70px 0;
+  width: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: blue; 
+}
+.development img {
+  z-index: -1;
+}
+.Maincontent {
+  width: 100vw;
+  padding: 10% 20%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.Maincontent div {
+    margin: 50px 30px;
+    width: 450px;
+    height: 700px;
+    padding: 30px 47.5px;
+    text-align: center;
+
+}
+
+.Maincontent div h3{
+  font-weight: bold;
+  font-size: 1.61em;
+  margin: 20px;
+}
+.Maincontent div p {
+  font-size: 1em;
+  word-spacing: 5px;
+  line-height: 30px;
+
+}
+.one {
+  background-color: rgba(10, 20, 255, 0.1);
+  border-bottom: 5px solid rgba(10, 20, 255, 0.9) ;
+}
+
+.two {
+  background-color: rgba(122, 9, 122, 0.1);
+  border-bottom: 5px solid rgba(122, 9, 122, 0.9);
+}
+
+.three {
+  background-color: rgba(10, 218, 3, 0.295);
+  border-bottom: 5px solid rgba(10, 218, 3, 0.85);
+}

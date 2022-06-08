@@ -4,20 +4,19 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0;
-  font-family: 'Roboto';
-    font-size: 0.8em;
-    color: white;
-    background-image: url('./30\ Real\ Examples\ Of\ Blockchain\ Technology\ In\ Practice\ 1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+margin: 0;
+font-family: 'Roboto';
+font-size: 0.8em;
+color: white;
+  
+}
 .home{
-  position: absolute;
-width: 1440px;
-height: 939px;
-left: 0px;
-top: 0px;
+  background-image: url('./30\ Real\ Examples\ Of\ Blockchain\ Technology\ In\ Practice\ 1.png');
+  background-repeat: no-repeat;
+  background-blend-mode:darken;
+  background-size: cover;
+  width:100vw;
+  height:100vh;
 }
 .navbar{
   display: flex;
@@ -27,9 +26,6 @@ top: 0px;
 }
 .navbar img{
   top: 24px;
-}
-.navbar span{
-   font-size: 1.5em;
 }
 .links{
   display: flex;
@@ -43,22 +39,30 @@ top: 0px;
   text-decoration: none;
 }
 .development {
+  width: 100%;
+  padding: 20px;
   margin: 5em 5em;
   width: 100%;
+  height: 50vh;
   padding: 2.5em;
-  word-spacing: 10px;
   transition: all 2s;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  align-items: center; 
 }
-
+.header{
+  display: flex;
+  height: 60vh;
+  padding: 2em;
+  align-items: center;
+  margin: 1em;
+}
+.text {
+    width: 70%;
+}
 .development h1{
   font-family: 'Roboto' sans-serif;
   font-style: normal;
-  font-weight: 900;
-  font-size: 60px;
+  font-weight: 900; 
+  font-size: 70px;
+  word-spacing: 20px;
   line-height: 70px;
 
 }
@@ -67,27 +71,28 @@ top: 0px;
   font-size: 1em;
 }
 .development button {
-  margin: 70px 0;
+  margin: 10px 0;
   width: 150px;
   padding: 10px;
   border-radius: 20px;
   background-color: blue; 
 }
+
 .development img {
-  z-index: -1;
   position: absolute;
 }
-.text {
-  width: 70%;
-}
+
 .Maincontent {
   width: 100vw;
   padding: 10% 20%;
+  position: relative;
   display: grid;
+  margin-top: 300px;
   grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
   grid-gap: 50px;
+  background-color: rgb(5, 5, 37);
 }
 
 .Maincontent div {
@@ -124,3 +129,25 @@ top: 0px;
   background-color: rgba(10, 218, 3, 0.295);
   border-bottom: 5px solid rgba(10, 218, 3, 0.85);
 }
+/* 
+
+
+
+
+
+.development {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center; 
+}
+
+
+
+.text {
+  width: 70%;
+}
+ */
+
+
+

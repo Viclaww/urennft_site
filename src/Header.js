@@ -8,7 +8,7 @@ const Header = ( { slides }) => {
     useEffect(() => {
         const interval =   setInterval(() => {
             setHeaders( headers === length -1 ? 0: headers + 1 )
-        }, 5000);
+        }, 1000);
         return () => clearInterval(interval)
     }, [headers])
     if (!Array.isArray(slides) || slides.length <= 0 ){
@@ -21,12 +21,12 @@ const Header = ( { slides }) => {
               
                     return (
                         
-                            <div className={index === headers ? "slide-active:" : 'slide'} key= {index}>
+                            <div className={index === headers ? "slide-active" : 'slide'} key= {index}>
                             {index === headers && (
                                          
 
-                                            <div className= 'text w3-animate-right'>
-                                                <div>
+                                            <div className= 'header w3-animate-right'>
+                                                <div className='text'>
                                                 <h1>{ head.header }</h1>
                                                 <p>{ head.subHead}</p>
                                                 <button>View More</button>
@@ -36,7 +36,8 @@ const Header = ( { slides }) => {
                                                     width: head.width,
                                                     height: head.height,
                                                     top: head.top,
-                                                    left: head.left,
+                                                    right: head.right,
+                                                    left: head.left
                                                 }} />
                                                 
                                                

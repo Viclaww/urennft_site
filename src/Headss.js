@@ -7,8 +7,8 @@ export const Sliderdata = [
     image : './realestate.png', 
     width: "1807px",
     height:'1164px',
-    top:'-200px',
-    left:'115px',
+    top:'-300px',
+    right:'10px',
     id:1
 },
 {
@@ -17,8 +17,8 @@ export const Sliderdata = [
     image: './nft.png',
     width: "613px",
     height:'417px',
-    top:'100px',
-    left:'761px', 
+    top:'70px',
+    left:'861px', 
     id:2
 }, 
 {
@@ -27,8 +27,8 @@ export const Sliderdata = [
     image: "./block.png",
     width: "732px",
     height:'488px',
-    top:'237px',
-    left:'708px', 
+    top:'0px',
+    left:'808px', 
     id:3
 }, 
     

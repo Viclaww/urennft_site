@@ -7,6 +7,8 @@ const Home = () => {
         <div className="home">
             <Navbar />     
             <Header slides = { Sliderdata }   />
+
+            
             <Maincontent />
         </div>
      );

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import {Sliderdata} from "./Headss"
 const Header = ( { slides }) => {
@@ -9,7 +10,7 @@ const Header = ( { slides }) => {
             setHeaders( headers === length -1 ? 0: headers + 1 )
         }, 3500);
         return () => clearInterval(interval)
-    }, [headers])
+    }, [headers, length])
     if (!Array.isArray(slides) || slides.length <= 0 ){
         return null
     }

@@ -3,7 +3,7 @@ import { Timeline,TimelineConnector,TimelineDot,TimelineSeparator,TimelineItem,T
 const Two_four   = () => {
     return ( 
         <div className="timeline">
-            <h1 className="tall">2024: Real Estate Project Commencement</h1>            
+            <h1 className="yearhead">2024: Real Estate Project Commencement</h1>            
             <Timeline align="alternate">
                 <TimelineItem>
                     <TimelineSeparator>

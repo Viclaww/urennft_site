@@ -399,10 +399,12 @@ color: white;
 .activeYear{
   color: #fff;
 }
-.timeline .tall {
-  font-size: 100px;
-  color: red;
+.timeline .yearhead {
+  font-size: 40px;
+  font-weight: 650;
   text-align: center;
+  width: 600px;
+  margin: 20px auto;
 }
 .timeline ul {
   list-style-image: url("./listimg.png");

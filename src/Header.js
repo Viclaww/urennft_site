@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import {Sliderdata} from "./Headss"
-
 const Header = ( { slides }) => {
     const [headers, setHeaders] = useState(0)
     const length = slides.length
@@ -8,7 +7,7 @@ const Header = ( { slides }) => {
     useEffect(() => {
         const interval =   setInterval(() => {
             setHeaders( headers === length -1 ? 0: headers + 1 )
-        }, 1000);
+        }, 3500);
         return () => clearInterval(interval)
     }, [headers])
     if (!Array.isArray(slides) || slides.length <= 0 ){
@@ -16,7 +15,7 @@ const Header = ( { slides }) => {
     }
     
     return ( 
-        <div className="development" >
+        <div className="development" >     
             {Sliderdata.map((head, index) => {
               
                     return (

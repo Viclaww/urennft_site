@@ -332,8 +332,12 @@ color: white;
 }
 .headimg{
   position: relative;
-  right: 100px;
-  width: 400px;
+  right: 40px;
+  width: 600px;
+}
+.about .text p{
+  width: 500px;
+  margin-bottom: 0;
 }
   /*  
 .about,.Roadmappage .development .header img{
@@ -400,11 +404,9 @@ color: white;
   color: #fff;
 }
 .timeline .yearhead {
-  font-size: 40px;
-  font-weight: 650;
+  font-size: 100px;
+  color: red;
   text-align: center;
-  width: 600px;
-  margin: 20px auto;
 }
 .timeline ul {
   list-style-image: url("./listimg.png");

@@ -1,10 +1,12 @@
 *{
+  text-decoration: none;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
 margin: 0;
+background-color: #0E0D24;
 font-family: 'Roboto';
 font-size: 0.8em;
 color: white;
@@ -23,36 +25,48 @@ color: white;
   justify-content: space-around;
   align-items: center;
   width: 70vw;
+  z-index: 1;
+  position: absolute;
 }
 .navbar img{
-  top: 24px;
+  top: 0px;
+  position: relative;
+  left: 0px;
 }
+
 .links{
   display: flex;
   justify-content: space-between;
   width: 35%;
   text-transform: capitalize;
-
-
+  
 }
 .links a{
+  margin: 50px 0;
   text-decoration: none;
+  cursor: pointer;
 }
+.links a:hover {
+  border-bottom: 2px solid blue ;
+}
+.active {
+  border-bottom: 2px solid blue ;
+}
+
 .development {
   width: 100%;
-  padding: 20px;
-  margin: 5em 5em;
+  margin: 0 3em;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   padding: 2.5em;
-  transition: all 2s;
+  transition: all ease-out 1s;
 }
 .header{
   display: flex;
-  height: 60vh;
-  padding: 2em;
+  height: 80vh;
+  padding: 1em;
   align-items: center;
-  margin: 1em;
+  /* margin: 1em; */
 }
 .text {
     width: 70%;
@@ -61,7 +75,7 @@ color: white;
   font-family: 'Roboto' sans-serif;
   font-style: normal;
   font-weight: 900; 
-  font-size: 70px;
+  font-size: 55px;
   word-spacing: 20px;
   line-height: 70px;
 
@@ -73,35 +87,41 @@ color: white;
 .development button {
   margin: 10px 0;
   width: 150px;
+  color: #fff;
   padding: 10px;
+  border: none;
   border-radius: 20px;
   background-color: blue; 
 }
 
 .development img {
   position: absolute;
+  
 }
 
 .Maincontent {
+  background-image: url('./30\ Real\ Examples\ Of\ Blockchain\ Technology\ In\ Practice\ 1.png');
+  background-repeat: no-repeat;
+  background-blend-mode:darken;
+  background-size: cover;
+  background-position: center;
   width: 100vw;
   padding: 10% 20%;
-  position: relative;
   display: grid;
-  margin-top: 300px;
   grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
   grid-gap: 50px;
-  background-color: rgb(5, 5, 37);
+  /* background-color: rgb(5, 5, 37); */
 }
 
 .Maincontent div {
     margin: 50px 30px;
-    width: 450px;
-    height: 700px;
+    width: 400px;
+    height: 600px;
     padding: 30px 47.5px;
     text-align: center;
-
+    
 }
 
 .Maincontent div h3{
@@ -115,13 +135,16 @@ color: white;
   line-height: 30px;
 
 }
+.vector {
+    margin-right: -67px;
+}
 .one {
-  background-color: rgba(10, 20, 255, 0.1);
+  background-color: rgba(10, 20, 255, 0.4);
   border-bottom: 5px solid rgba(10, 20, 255, 0.9) ;
 }
 
 .two {
-  background-color: rgba(122, 9, 122, 0.1);
+  background-color: rgba(122, 9, 122, 0.4);
   border-bottom: 5px solid rgba(122, 9, 122, 0.9);
 }
 
@@ -151,3 +174,238 @@ color: white;
 
 
 
+.community{
+  margin-top: -10px;
+  padding: 50px 200px 100px ;
+}
+.community h4{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 20px;
+}
+.social {
+  display: flex;
+  width: 60%;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: space-around;
+}
+.social div {
+  border-radius: 15%;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px #ffffff;
+  /* display: flex; */
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #777;
+  padding: 20px;
+}
+.social img {
+  width: 50px;
+  height: 50px;
+  
+}
+.community p {
+  text-align: center;
+
+}
+.social button {
+  box-sizing: border-box;
+  box-shadow: 1px 1px 2px #ffffff;
+  border-radius: 20px;
+   margin-top: 10px; 
+  width: 70px;
+  height:30px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #666;
+}
+
+/* Our Roadmap */
+
+.OurRoadmap {
+  background-color: #08091A;
+  padding: 20px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.OurRoadmap h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.OurRoadmap img {
+
+  width: 300px;
+}
+.OurRoadmap p {
+  margin: 30px 0;
+}
+.OurRoadmap button{
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  background-color: blue;
+  color: #fff;
+}
+.OurRoadmap div{
+  width: 50%;
+  padding: 20px 0;
+}
+
+
+/* Footer */
+
+.footer { 
+  padding: 20px 200px;
+  display: flex;
+  font-size: 1em;
+  text-transform: capitalize;
+  flex-direction: column;
+  justify-content:space-between ;
+  height: 60vh;
+  width: 90%;
+  margin: 50px auto;
+}
+.footer img {
+  width: 200px;
+  margin: 50px 0;
+}
+.footer h4 {
+  font-weight: bold;
+}
+.footer ul {
+  list-style-type: none;
+  height: 100px;
+
+}
+.footer ul li {
+  margin: 5px 0;
+}
+.footer-text {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  text-align: center;
+  margin: 40px 0;
+}
+#hide{
+  visibility: hidden;
+}
+
+/* about page, roadmap page */
+/* .about,.Roadmappage  .development {
+  
+.Roadmappage .development{
+  height: 50vh;
+  position: relative;
+  z-index: -1;
+ }
+ .Roadmappage .header {
+   z-index: -1;
+   position: relative;
+ }
+
+.about,.Roadmappage .header img {
+  position: relative;
+  width: 50px;
+}
+
+   */
+
+.about,.Roadmappage .development {
+  background-image: url('—Pngtree—light\ effect\ high\ tech\ blue_7487661\ 1\ \(1\).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+  width: 100vw;
+  margin: 0;
+  height: 100vh;
+}
+.headimg{
+  position: relative;
+  right: 100px;
+  width: 400px;
+}
+  /*  
+.about,.Roadmappage .development .header img{
+  position: relative;
+  width: 600px;
+}
+
+.about,.Roadmappage h1{
+  margin: 20px 0;
+  font-weight: 700;
+}
+.about .header p {
+  width: 450px;
+} */
+.Roadmappage img{
+  z-index: -1;
+}
+.Roadmappage .development {
+  height: 60vh;
+}
+.Roadmappage .Mainconten{
+  padding: 20px 150px 40px;
+  flex-direction: column;
+  background-color: #08091A;
+
+}
+  .about .Maincontent {
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin-bottom: 20em;
+  }
+.about .Maincontent div {
+  text-align: left;
+  height: 90vh;
+  margin: 0;
+  width: 500px;
+  border-bottom: 2px #677 dashed ;
+}
+.about .Maincontent div h3 {
+  padding: 0;
+  margin-left: 0 ;
+
+}
+.about .footer p {
+  text-align: center;
+}
+
+.about .footer{
+  border-top: 2px #667 dashed; 
+}
+
+.Roadmappage .year {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 2em;
+  width: 60%;
+  font-weight: 600;
+  margin: 50px 0;
+  color: #677;
+}
+.activeYear{
+  color: #fff;
+}
+.timeline .tall {
+  font-size: 100px;
+  color: red;
+  text-align: center;
+}
+.timeline ul {
+  list-style-image: url("./listimg.png");
+  padding-left: 15px;
+  margin: 50px 0 0 0;
+}

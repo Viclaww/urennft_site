@@ -1,33 +1,30 @@
-import { Timeline,TimelineConnector,TimelineDot,TimelineSeparator,TimelineItem,TimelineContent, } from "@material-ui/lab";
+import { VerticalTimeline, VerticalTimelineElement, } from "react-vertical-timeline-component";
+import 'react-vertical-timeline-component/style.min.css'
 const Two_two = () => {
     return ( 
 <div className="timeline">
     <h1 className="yearhead">2022: Development Stage</h1>
-                    <Timeline align="alternate">
-                <TimelineItem>
-                        <TimelineSeparator >
-                            <TimelineConnector color="primary" />
-                            <TimelineDot color="primary" />
-                            <TimelineConnector color="primary"/>
-                        </TimelineSeparator>
-                        
-                        <TimelineContent>
-                            <h2>Q2:</h2>
+                <VerticalTimeline  lineColor="#00f">
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                        <h2>Q2:</h2>
                             <ul>
                                 <li>initial seed funding il</li>
                                 <li>BRISE Audit</li>
                                 <li>Website launch</li>
                             </ul>
-                        </TimelineContent>
-                    </TimelineItem >
-                    <TimelineItem>
-                        <TimelineSeparator color="primary">
-                            <TimelineDot color="primary"/>
-                            <TimelineConnector color="primary"/>
-                        </TimelineSeparator>
-                        
-                        <TimelineContent>
-                            <h2>Q3</h2>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                        <h2>Q3:</h2>
                             <ul>
                                 <li>Token Launch</li>
                                 <li>DEX Listing</li>
@@ -36,16 +33,14 @@ const Two_two = () => {
                                 <li>App Early bird testing</li>
                                 <li>Debugging and upgrades</li>
                             </ul>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot color="primary" />
-                            <TimelineConnector color="primary"/>
-                        </TimelineSeparator>
-                        
-                        <TimelineContent>
-                            <h2>Q4</h2>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                               <h2>Q4</h2>
                             <ul>
                                 <li>Apps listing on website, 
 Google PlayStore e.t.c</li>
@@ -56,9 +51,9 @@ Google PlayStore e.t.c</li>
 </li>
                                 <li>Partnership</li>
                             </ul>
-                        </TimelineContent>
-                    </TimelineItem>
-                </Timeline>
+                     
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
                 </div>
      );
 }

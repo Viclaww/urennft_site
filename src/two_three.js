@@ -1,34 +1,28 @@
-import { Timeline,TimelineConnector,TimelineDot,TimelineSeparator,TimelineItem,TimelineContent } from "@material-ui/lab";
-
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 const Two_three = () => {
     return ( 
         <div className="timeline">
 
             <h1 className="yearhead">2023: Project Expansion Stage</h1>
-
-        <Timeline align="alternate" >
-            <TimelineItem>
-                      <TimelineSeparator >
-                            <TimelineConnector color="primary" />
-                            <TimelineDot color="primary" variant="outlined" />
-                            <TimelineConnector color="primary"/>
-                        </TimelineSeparator>
-                        
-                        <TimelineContent>
-                            <h2>Q1:</h2>
+            <VerticalTimeline  lineColor="#00f">
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                                <h2>Q1:</h2>
                             <ul>
                                 <li>CEX listing</li>
                             </ul>
-                        </TimelineContent>
-                    </TimelineItem >
-                    <TimelineItem>
-                        <TimelineSeparator color="primary">
-                            <TimelineDot color="primary" variant="outlined"/>
-                            <TimelineConnector color="primary"/>
-                        </TimelineSeparator>
-                        
-                        <TimelineContent>
-                            <h2>Q2:</h2>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                         <h2>Q2:</h2>
                             <ul>
                                 <li>Architectural drawing and 
 renderings of the property 
@@ -38,16 +32,14 @@ the project
                                 <li>NFT Marketplace Development</li>
                                 
                             </ul>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot color="primary" variant="outlined" />
-                            <TimelineConnector color="primary"/>
-                        </TimelineSeparator>
-                        
-                        <TimelineContent>
-                            <h2>Q3:</h2>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                                   <h2>Q3:</h2>
                             <ul>
                         
                         <li>NFT Presale</li>
@@ -60,16 +52,16 @@ the project
                         
                         
                             </ul>
-                        </TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot color="primary" variant="outlined" />
-                            <TimelineConnector color="primary"/>
-                        </TimelineSeparator>
                         
-                        <TimelineContent>
-                            <h2>Q4:</h2>
+                     
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                     <h2>Q4:</h2>
                             <ul>
                         
                         <li>Uren CEX Developmet and Beta
@@ -90,14 +82,11 @@ Patent Applications (More to unfold)
 
                         
                             </ul>
-                        </TimelineContent>
-                    </TimelineItem>
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
 
-        </Timeline>
-        <div className="nextline">
-                <button>View 2025 RoadMap</button>
             </div>
-    </div>              
+             
      );
 }
  

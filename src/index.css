@@ -2,6 +2,7 @@
   text-decoration: none;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
 body {
@@ -185,9 +186,10 @@ color: white;
   margin: 20px;
 }
 .social {
-  display: flex;
+  display: grid;
   width: 60%;
   margin: 20px auto;
+  grid-template-columns: auto auto auto auto;
   align-items: center;
   justify-content: space-around;
 }
@@ -324,7 +326,6 @@ color: white;
   background-image: url('—Pngtree—light\ effect\ high\ tech\ blue_7487661\ 1\ \(1\).png');
   background-repeat: no-repeat;
   background-size: cover;
-
   background-position: center;
   width: 100vw;
   margin: 0;
@@ -336,19 +337,18 @@ color: white;
   width: 600px;
 }
 .about .text p{
-  width: 500px;
+  width: 300px;
+  font-weight: 100;
   margin-bottom: 0;
 }
+
   /*  
 .about,.Roadmappage .development .header img{
   position: relative;
   width: 600px;
 }
 
-.about,.Roadmappage h1{
-  margin: 20px 0;
-  font-weight: 700;
-}
+
 .about .header p {
   width: 450px;
 } */
@@ -380,10 +380,6 @@ color: white;
 .about .Maincontent div h3 {
   padding: 0;
   margin-left: 0 ;
-
-}
-.about .footer p {
-  text-align: center;
 }
 
 .about .footer{
@@ -403,6 +399,11 @@ color: white;
 .activeYear{
   color: #fff;
 }
+.timeline{
+  width: 90%;
+  margin: 0 auto;
+
+}
 .timeline .yearhead {
   font-size: 40px;
   font-weight: 600;
@@ -414,4 +415,201 @@ color: white;
   list-style-image: url("./listimg.png");
   padding-left: 15px;
   margin: 50px 0 0 0;
+}
+
+
+@media screen and (max-width:768px) {
+.home {
+  background-image: url("realestate.png");
+  background-position: center;
+}
+.navbar{
+  width: 100%;
+}
+.navbar img {
+  width: 100px;
+}  
+.links {
+  justify-content: space-around;
+}
+.links a{
+  margin-left: 10px;
+  font-size: 12px ;
+}
+.development {
+  margin: 0 0;
+}
+.text {
+  width: 90%;
+}
+.header {
+  padding: 0;
+}
+.development h1 {
+  font-size: 20px;
+  word-spacing: 10px;
+  line-height: 25px;
+}
+.development p{
+  font-size: 12px;
+  opacity: 1;
+}
+.development button{
+  font-size: 15px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 15px 0;
+  padding: 5px;
+  background-color: #117;
+}
+.development img {
+  display: none;
+}
+
+.Maincontent{
+  background-image: none;
+  background-color: #08091A;
+  grid-template-columns: auto;
+}
+.Maincontent div{
+ width: 300px;
+ gap: 30px;
+ margin: 30px auto 0;
+ padding: 10px 20px;
+ height: auto; 
+}
+.Maincontent div h3{
+  font-size: 1.45em;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.Maincontent div p,p {
+  font-size: 0.9em;
+  word-spacing: 2px;
+}
+.Maincontent div img {
+  width: 70px;
+  margin-top: 20px;
+}
+.community{
+  padding: 100px 20px;
+}
+.community h4{
+  font-size: 1.25em;
+}
+.community p{
+  text-align: left;
+}
+.social {
+  grid-template-columns: auto auto;
+  gap: 30px;
+  margin: 30px auto;
+  
+}
+.OurRoadmap {
+  flex-direction: column;
+  padding: 20px 60px;
+}
+.OurRoadmap .text{
+  margin: 0 40px;
+  width: 55%;
+} 
+.OurRoadmap button{
+  font-size: 15px;
+  width: 130px;
+  border-radius: 10px;
+  margin: 15px 0;
+
+  padding: 5px;
+  background-color: #117;
+}
+.footer{
+  background-color: #08090A;
+  padding: 20px 90px;
+  margin: 0 0;
+  width: 100%;
+  height: auto;
+
+}
+.footer-text {
+  flex-direction: column;
+}
+.footer img{
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer ul{
+  margin-top: 20px;
+}
+.footer p{
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+.hiddenhead {
+  display: inline;
+
+}
+/* about */
+.headimg{
+  display: block;
+}
+
+.about,.Roadmappage h1{
+  margin: 20px 0;
+  font-weight: 700;
+  z-index: 1;
+  
+}
+.Roadmappage h1{
+  font-size: 30px;
+  margin: 20px 100px;
+}
+.about .Maincontent div {
+  width: 300px;
+  height: auto;
+  border-bottom: none;
+}
+.about .text p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.Roadmappage .development img{
+  display: block;
+  z-index: -1;
+  position: relative;
+  right: 450px;
+  top: 90px;
+}
+.about .development img{
+  display: block;
+  z-index: -1;
+  position: relative;
+  right: 450px;
+  top: 90px;
+}
+.timeline .yearhead {
+  font-size: 25px;
+  font-weight: 600;
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.about .footer{
+  border-top: none; 
+} 
+.Roadmappage .Mainconten {
+  padding: 1px 10px 30px;
+}
+.Roadmappage .year{
+  width: 100%;
+  font-weight: 200;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4em;  
+}
+
 }

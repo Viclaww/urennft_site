@@ -12,7 +12,7 @@ const Footer = () => {
                      <li> <Link to="/roadmap">roadmap</Link></li>
                  
                  </ul>
-                 <ul>
+                 <ul className="hiddenhead">
                      <h4 id="hide">d</h4>
                     <li>Support</li>
                     <li>careers</li>

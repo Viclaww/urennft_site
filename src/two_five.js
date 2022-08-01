@@ -1,40 +1,37 @@
-import { Timeline,TimelineConnector,TimelineDot,TimelineSeparator,TimelineItem,TimelineContent } from "@material-ui/lab";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const Two_five   = () => {
     return ( 
         <div className="timeline">
             <h1 className="yearhead">2025: Uren Chain</h1>
-            <Timeline align="alternate">
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="primary" variant="outlined"/>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent>
+            <VerticalTimeline  lineColor="#00f">
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
                         <h1>Q1:</h1>
                         <ul>
                             <li>First Uren Estate launch and Listing</li>
 
                         </ul>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineConnector/>
-                        <TimelineDot color="primary" variant="outlined"/>
-                        <TimelineConnector/>
-                    </TimelineSeparator>
-                    <TimelineContent>
-                        <h1>Q3:</h1>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                    iconStyle={{background:"#08091a", color:'#33a'}} 
+                    className="vertical-timeline-element"
+                    contentStyle={{ background:'#00001c', color:'#fff'}}
+                    contentArrowStyle={{borderRight:'7px solid black'}}
+                    >
+                <h1>Q3:</h1>
                         <ul>
                             
                             <li>Uren Chain</li>
-                        </ul>
-                    </TimelineContent>
-                </TimelineItem>
-            </Timeline>
-            
+                        </ul>                   
+                </VerticalTimelineElement>
+                </VerticalTimeline>          
+
+    
         </div>
      );
 }

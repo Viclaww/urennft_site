@@ -586,8 +586,9 @@ color: white;
   display: block;
   z-index: -1;
   position: relative;
-  right: 450px;
-  top: 90px;
+  right: 500px;
+  width: 550px;
+  top: 50px;
 }
 .timeline .yearhead {
   font-size: 25px;
